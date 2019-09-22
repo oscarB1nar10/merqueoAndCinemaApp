@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.merqueoandcinemaapp.view.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_movieDescriptionFragment"
+            app:destination="@id/movieDescriptionFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_mainFragment_to_carShoppingFragment"
+            app:destination="@id/carShoppingFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/movieDescriptionFragment"
+        android:name="com.example.merqueoandcinemaapp.view.MovieDescriptionFragment"
+        android:label="fragment_movie_description"
+        tools:layout="@layout/fragment_movie_description" >
+
+        <argument android:name="id" app:argType="integer"/>
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/carShoppingFragment"
+        android:name="com.example.merqueoandcinemaapp.view.CarShoppingFragment"
+        android:label="fragment_car_shopping"
+        tools:layout="@layout/fragment_car_shopping" >
+
+        <!--<argument android:name="ids" app:argType="com.example.merqueoandcinemaapp.utils.MoviesToWatch"/>-->
+
+        <action
+            android:id="@+id/action_carShoppingFragment_to_movieDescriptionFragment"
+            app:destination="@id/movieDescriptionFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+</navigation>

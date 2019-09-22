@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FC2E76</color>
+    <color name="colorPrimaryDark">#FAE7E7</color>
+    <color name="colorAccent">#F8E7E7E7</color>
+
+    <color name="gray_light">#C4B1B0B0</color>
+    <color name="white">#FFFF</color>
+    <color name="title_movie_color">#FF0000</color>
+    <color name="movie_description_color">#050404</color>
+    <color name="cards_view_color">#95FC2E76</color>
+</resources>

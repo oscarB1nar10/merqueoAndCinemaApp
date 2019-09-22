@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.MovieDescriptionFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/txv_movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/amatica_sc_bold"
+            android:gravity="center_horizontal"
+            android:text="It2"
+            android:textColor="@color/title_movie_color"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/rl_image_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txv_movie_title">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                android:elevation="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:maxHeight="150dp"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="@color/cards_view_color">
+
+                <ImageView
+                    android:id="@+id/imv_movie_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="150dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/it2" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txv_movie_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/rl_image_container"
+            android:text="dfdsgftrhyjhgtfdsfrgthy     gtfrdesefrg
+            thyujefrgthygfrdefrgtfrgtffefrgt
+            hgrfredrg"
+            android:fontFamily="@font/amatica_sc_bold"
+            android:textColor="@color/movie_description_color"
+            android:textSize="15sp"
+            android:maxLength="300" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
